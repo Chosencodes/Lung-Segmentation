@@ -1,0 +1,9 @@
+torch
+pytorch-lightning
+monai
+torchio
+nibabel
+scikit-learn
+pandas
+matplotlib
+tqdm
