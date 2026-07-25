@@ -52,18 +52,6 @@ Green contour = ground truth, red contour = prediction.
 - **Inference:** MONAI sliding-window inference, Gaussian-weighted blending
 - **Validation:** 3-fold cross-validation, 21 held-out cases per fold
 
-## Repository Structure
-
-src/
-├── data/preprocessing.py # TorchIO transforms, fold loaders
-├── models/lightning_module.py # 3D U-Net + PyTorch Lightning module
-├── train.py # k-fold training loop
-├── evaluate.py # per-case metrics (MONAI-based)
-└── visualize.py # qualitative result figures
-
-configs/default.yaml # hyperparameters
-results/ # metrics CSV, figures
-
 ## Limitations
 
 - Trained on only 63 annotated cases — small for the anatomical variability in lung tumors
